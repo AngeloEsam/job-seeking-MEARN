@@ -8,7 +8,7 @@ router.post('/register',register )
 //login user
 router.post('/login',login)
 //logout
-router.post('/logout',isAuthenticated,logout)
+router.get('/logout',isAuthenticated,logout)
 //get user
 router.get("/getuser", isAuthenticated, getUser);
 export default router
